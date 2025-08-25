@@ -134,4 +134,5 @@ If you have any questions or need help, please open an issue on GitHub.
 
 ---
 
-**Made with ❤️ by IO8 Coder Team**
+**Made by IO8 Coder Team**
+
