@@ -1,0 +1,57 @@
+
+STEP 1 :- JUST ESSENTAI INSTALLATIONS 
+
+# If Python not found:
+python --version
+
+# If pip not found:
+pip --version
+
+# If uvicorn not found:
+pip install uvicorn[standard]
+
+
+RUN THESE CODES IN TERMINAL  THEN 
+
+# If Node.js not found:
+node --version
+
+# If npm not found:
+npm --version
+
+# Clear npm cache if needed:
+npm cache clean --force
+
+
+
+STEP 2 :- START BACKEND
+
+# Navigate to backend folder
+cd C:\Projects\IDE\IDE\backend
+
+# Create virtual environment (if it doesn't exist)
+python -m venv .venv
+
+# Activate virtual environment (Windows PowerShell)
+.\.venv\Scripts\Activate.ps1
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Start the server
+uvicorn main:app --host 127.0.0.1 --port 8000 --reload
+
+
+
+STEP 3 :- IN NEW TERMINAL START FRONTEND
+
+
+# Navigate to frontend folder
+cd C:\Projects\IDE\IDE\frontend
+
+# Install dependencies (first time only)
+npm install
+
+# Start development server
+npm run dev
+
